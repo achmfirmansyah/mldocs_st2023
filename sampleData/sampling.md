@@ -1,0 +1,1 @@
+## Choosing Clumps/Segment as Sample Locations 

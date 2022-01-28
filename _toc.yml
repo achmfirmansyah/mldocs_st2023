@@ -1,0 +1,11 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+chapters:
+  - file: sampleData/intro_sample.md
+    sections:
+      - file: sampleData/prepro.md
+      - file: sampleData/segmen.md
+      - file: sampleData/sampling.md
