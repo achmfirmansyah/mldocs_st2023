@@ -2,7 +2,7 @@
 
 The first procedure in the workflow is preparing sample locations for data collection. 
 In this step, we will utilize several data, i.e.:
-- Satellite imagery (SPOT 6/7) with acquisition date arrange from Jan 2019- Sept 2020. 
+- Satellite imagery (SPOT 6/7) with acquisition date arrange from Jan 2019- June 2020. 
 The data have been acquired through collaboration with 
 National Research and Innovation Agency / BRIN, previously known as National Institute of Aeronautics and Space / LAPAN. Please read this <a href='https://earth.esa.int/web/eoportal/satellite-missions/s/spot-6-7'>link</a> for documentations.
 - Land cover classification; produced from Mapping Development Division, Directorate of Census and Survey Development, Statistics Indonesia. This map have produced in 2021. the satellite imagery for preparing sample area. These slides can be used as references: <a href='https://docs.google.com/presentation/d/1NYV2z1i6Sm8Jjj98gY9mu4RCE6bmuY6EvIqOCo75FkY/edit?usp=sharing&resourcekey=0-xZNC0Y90ihxBNg9fKSuAoA'>1</a> ,
