@@ -72,7 +72,7 @@ for i in features_data:
 ```
 The output of this code is tif file with size 10km-10km represent the grid. If the SPOT file have 1000 grid, the result of this code would be also 1000 tif file.
 
-###3. Patched Imagery in Boundary Area
+### 3. Patched Imagery in Boundary Area
 
 After clipping/warp image into 10km-10km size, we will continue patch the tif image, which located in boundary of province. For example, grid with ID-0024 is found in Aceh and North Sumatera, the result of previous step would two image with same grid. Therefore, we need to patch those tiff into one file for making the next procedure easier.
 The image below can be used to describe the process.
