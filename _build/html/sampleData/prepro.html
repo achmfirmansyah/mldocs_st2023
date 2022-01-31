@@ -221,6 +221,11 @@
    2. Warp Images
   </a>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#patched-imagery-in-boundary-area">
+   3. Patched Imagery in Boundary Area
+  </a>
+ </li>
 </ul>
 
             </nav>
@@ -249,6 +254,11 @@
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#warp-images">
    2. Warp Images
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#patched-imagery-in-boundary-area">
+   3. Patched Imagery in Boundary Area
   </a>
  </li>
 </ul>
@@ -326,7 +336,9 @@ for i in features_data:
 </pre></div>
 </div>
 <p>The output of this code is tif file with size 10km-10km represent the grid. If the SPOT file have 1000 grid, the result of this code would be also 1000 tif file.</p>
-<p>###3. Patched Imagery in Boundary Area</p>
+</div>
+<div class="section" id="patched-imagery-in-boundary-area">
+<h2>3. Patched Imagery in Boundary Area<a class="headerlink" href="#patched-imagery-in-boundary-area" title="Permalink to this headline">¶</a></h2>
 <p>After clipping/warp image into 10km-10km size, we will continue patch the tif image, which located in boundary of province. For example, grid with ID-0024 is found in Aceh and North Sumatera, the result of previous step would two image with same grid. Therefore, we need to patch those tiff into one file for making the next procedure easier.
 The image below can be used to describe the process.</p>
 <p>To perform this step, we will use this code inside the Python Console in QGIS.</p>
