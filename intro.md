@@ -1,5 +1,8 @@
 # Introduction
 
+In 2023, Statistics Indonesia utilize remote sensing to build Agricultural Potential Map as one of the output of Agricultural Census 2023. 
+Agricultural Potential Map will classify all Indonesia area to some land cover class, such as rice fields, fields, oil palm plantation, tea plantation and others land covers class. It will show the agricultural potential area in Indonesia and being an area sampling frames.
+
 This book presents the guidance and workflow of <b>Agricultural Potential Map</b>. The process utilize several Machine Learning algorithms. 
 In this Jupyter Book will show the workflow and syntax used in this process.
 
