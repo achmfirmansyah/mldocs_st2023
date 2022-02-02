@@ -15,7 +15,7 @@ The image below will explain the main idea of first step.
 As expected, after merging two images, there will be visible contrast of two images. 
 ![](../sampleData/Prepro_4.png)
 
-Despite that, the contrary is acceptable in purpose of escalate the coverages and take the recent acquisition.
+Despite that, the contrary is acceptable to fill the gap of coverages from recent acquisition with penultimate ones. 
 
 To perform this step, we use this code.
 ```commandline
@@ -37,7 +37,7 @@ The output of this code will be VRT file. VRT file is preferable due to the adva
 After building the merged file we clip the result into small grid 10km-10km for each province (this step is used ```gdal_warp``` function). We use this approach to enlighten the workloads of next procedure (Segmentation process). The grid file are prepared independently aside this procedure. Furthermore, the grid is also used in Machine Learning project conducted in the 2021.
 
 The images below will describe the process.
-
+![](../sampleData/Prepro_5.png)
 
 To perform this step, this code will be used. In addition, this code also run in the Python Console inside QGIS.
 ```commandline
@@ -75,7 +75,9 @@ The output of this code is tif file with size 10km-10km represent the grid. If t
 ### 3. Patched Imagery in Boundary Area
 
 After clipping/warp image into 10km-10km size, we will continue patch the tif image, which located in boundary of province. For example, grid with ID-0024 is found in Aceh and North Sumatera, the result of previous step would two image with same grid. Therefore, we need to patch those tiff into one file for making the next procedure easier.
+
 The image below can be used to describe the process.
+![](../sampleData/Prepro_6.png)
 
 To perform this step, we will use this code inside the Python Console in QGIS.
 ```commandline
