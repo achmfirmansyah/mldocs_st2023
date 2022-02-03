@@ -64,5 +64,5 @@ plt.show()
 For better visualization, we clip a 100m x 100m raster and compare it with the SPOT data using the QGIS. It can be seen that the results of segmentation are able to distinguish areas with different land cover.
 
 ![](compare segment.png)
-
+![](../sampleData/compare segment.png)
 
