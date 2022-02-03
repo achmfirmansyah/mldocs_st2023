@@ -1,7 +1,8 @@
 ## Segmentation Data from Satellite Imagery
 
-Segmentation is process of partitioning raster into some non-overlapping partitions, called segments. 
-Input of segmentation is patched raster we get from previous step. One of input raster is showed below:
+After we get the patched imagery from the previous step, we are going to the next step called Segmentation. Segmentation is process of partitioning raster into some non-overlapping partitions, called segments. Each segment has the same characteristics and not so different bands. Using this assumption, we can label this segment and use it as polygon input for our Machine Learning in classification process.  
+
+Input of segmentation is patched raster measuring 10km x 10km that we get from previous step. One of input raster is visualized below, we use ```rasterio``` to open and visualize this raster:'
 
 ```commandline
 import matplotlib.pyplot as plt
@@ -28,8 +29,9 @@ This segmentation method has four steps:
 4. Relabelled the image
 
 More information about this segmentation step and  function we used can be found at this <a href='http://rsgislib.org/rsgislib_segmentation.html'>link</a>.   
-We set the initial number of cluster centres to 6 clusters and the minimum pixel of each clumps to 500 pixels.
-To perform this segmentation step, this code will be used.
+ 
+Two important parameters that affects this segmentation result are number of cluster and minimum pixel. Based on simulations, we get optimum initial number of cluster centres to 6 clusters and the minimum pixel of each clumps to 500 pixels. To perform this segmentation step, this code will be used.
+
 
 ```commandline
 from rsgislib.segmentation import segutils
@@ -58,3 +60,7 @@ plt.show()
 ```
 
 ![](../sampleData/segmented_raster.png)
+
+For better visualization, we clip a 100m x 100m raster and compare it with the SPOT data using the QGIS. It can be seen that the results of segmentation are able to distinguish areas with different land cover.
+
+![](../sampleData/compare segment.png)
